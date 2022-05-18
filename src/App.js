@@ -17,6 +17,9 @@ function App() {
 
   function getActivity() {
 
+    // prevent the new activity from loading if the current one is still fading into the view
+    // stops a bug where the new activity loads into the previous one's animation
+    if (fade === 0) {
     // select a random group size
     let groupSize = participants[Math.floor(Math.random() * participants.length) % participants.length];
 
@@ -27,6 +30,8 @@ function App() {
 
     // when the button is clicked, set the fade property to 1
     setFade(1);
+    }
+
   }
 
   return (
