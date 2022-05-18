@@ -53,3 +53,19 @@
 .activity[fade='1'] {
   animation: fade-in linear 2s;
 }
+
+button {
+  font-size: 30px;
+  border-radius: 7px;
+  padding: 15px;
+  transition: background-color .5s;
+  transition: border .5s;
+  transition: color .5s;
+}
+
+button:hover {
+  /* opacity: 0.6; */
+  background-color: #555555;
+  border: none;
+  color: white;
+}

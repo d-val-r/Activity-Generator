@@ -31,8 +31,8 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={getActivity}>Fetch activity</button>
       <h1 className="activity" onAnimationEnd={() => setFade(0)} fade={fade}>{activity === null ? "Click the button to generate an activity!" : activity["activity"]}</h1>
+      <button onClick={getActivity}>Fetch activity</button>
     </div>
   );
 }
