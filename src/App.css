@@ -51,7 +51,7 @@
 
 /* Fade only when the h1 fade property is 1 */
 .activity[fade='1'] {
-  animation: fade-in linear 1s;
+  animation: fade-in linear 1.5s;
 }
 
 button {
